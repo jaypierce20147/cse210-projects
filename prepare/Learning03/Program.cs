@@ -5,7 +5,10 @@ class Program
 {
     static void Main(string[] args)
     {
+        //Initialize the function to use it each time
         Fraction f1 = new Fraction();
+        //To display to the terminal, use the formula (initializedname.function())
+        //to use it and display it
         Console.WriteLine(f1.GetFractionString());
         Console.WriteLine(f1.GetDecimalValue());
 
