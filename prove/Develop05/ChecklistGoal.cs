@@ -6,9 +6,18 @@ public class ChecklistGoal : Goal
     private int _completedCount;
     private int _bonusPoints;
 
-    public int GetTargetCount() => _targetCount;
-    public int GetCompletedCount() => _completedCount;
-    public int GetBonusPoints() => _bonusPoints;
+    public int GetTargetCount()
+    {
+        return _targetCount;
+    }
+    public int GetCompletedCount()
+    {
+        return _completedCount;
+    }
+    public int GetBonusPoints()
+    {
+        return _bonusPoints;
+    }
 
     //Constructor
     public ChecklistGoal(
