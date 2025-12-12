@@ -3,17 +3,32 @@ using System;
 public class Video
 {
     // Get and set the title, author, length and create a list of comments
-    public string Title { get; set;}
-    public string Author { get; set;}
-    public int Length { get; set;}
+    private string _title;
+    private string _author;
+    private int _length;
     private List<Comment> _comments = new List<Comment>();
 
     // Store what the title author and length of video is
     public Video(string title, string author, int length)
     {
-        Title = title;
-        Author = author;
-        Length = length;
+        _title = title;
+        _author = author;
+        _length = length;
+    }
+
+    public string GetTitle()
+    {
+        return _title;
+    }
+
+    public string GetAuthor()
+    {
+        return _author;
+    }
+
+    public int GetLength()
+    {
+        return _length;
     }
 
     // Allows the program to add comments
@@ -29,5 +44,8 @@ public class Video
     }
 
     // Allows the code to see it, but not modify it.
-    public IReadOnlyList<Comment> Comments => _comments.AsReadOnly();
+    public List<Comment> GetComments()
+    {
+        return _comments;
+    }
 }
