@@ -13,6 +13,7 @@ public class Lecture : Event
         _capacity = capacity;
     }
 
+    // Grab the lecture details
     public string GetLectureDetails()
     {
         return $"Capacity: {_capacity}\nSpeaker: {_speaker}.";

@@ -9,6 +9,7 @@ public class Event
     private Address _address;
     private string _eventType;
     
+    // Store the event
     public Event(string title, string description, string date, string time, Address address, string eventType)
     {
         _title = title;
@@ -19,16 +20,20 @@ public class Event
         _eventType = eventType;
     }
 
+    // Grab the standard details
     public string GetStandardDetails()
     {
         return $"Title: {_title} \n Description: {_description} \n Date: {_date} \n Time: {_time} \n Address: {_address.GetFullAddress()}";
     }
 
+    // Grab the Full details
     public string GetFullDetails(string extraInfo)
     {
         return $"{GetStandardDetails()} \n Event Type: {_eventType} \n {extraInfo}";
     }
 
+
+    // Grab the description
     public string GetShortDescription()
     {
         return $"Event Type: {_eventType} \n Title: {_title} \n Date: {_date}";

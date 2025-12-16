@@ -5,6 +5,7 @@ class Program
 {
     static void Main(string[] args)
     {
+        // Create new instances of the activities
         Address a1 = new Address("123 Maple St", "Phoenix", "AZ");
         Address a2 = new Address("55 Ocean Ave", "Miami", "FL");
         Address a3 = new Address("22 Forest Trail", "Portland", "OR");
